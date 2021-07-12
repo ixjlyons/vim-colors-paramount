@@ -19,13 +19,13 @@ endif
 
 let g:colors_name='paramount'
 
-let s:black           = { "gui": "#000000", "cterm": "232" }
+let s:black           = { "gui": "#010101", "cterm": "232" }
 let s:medium_gray     = { "gui": "#767676", "cterm": "243" }
 let s:white           = { "gui": "#F1F1F1", "cterm": "15"  }
 let s:actual_white    = { "gui": "#FFFFFF", "cterm": "231" }
-let s:subtle_black    = { "gui": "#303030", "cterm": "236" }
+let s:subtle_black    = { "gui": "#080b0a", "cterm": "236" }
 let s:light_black     = { "gui": "#262626", "cterm": "235" }
-let s:lighter_black   = { "gui": "#4E4E4E", "cterm": "239" }
+let s:lighter_black   = { "gui": "#757575", "cterm": "239" }
 let s:light_gray      = { "gui": "#A8A8A8", "cterm": "248" }
 let s:lighter_gray    = { "gui": "#C6C6C6", "cterm": "251" }
 let s:lightest_gray   = { "gui": "#EEEEEE", "cterm": "255" }
@@ -55,11 +55,11 @@ if &background == "dark"
   let s:bg_very_subtle  = s:subtle_black
   let s:norm            = s:lighter_gray
   let s:norm_subtle     = s:medium_gray
-  let s:purple          = s:light_purple
+  let s:purple          = s:light_green
   let s:cyan            = s:light_cyan
   let s:green           = s:light_green
   let s:red             = s:light_red
-  let s:visual          = s:light_purple
+  let s:visual          = s:dark_purple
   let s:yellow          = s:light_yellow
 else
   let s:bg              = s:actual_white
@@ -188,7 +188,7 @@ call s:h("TabLineSel",    {"fg": s:purple, "bg": s:bg_subtle, "gui": "bold", "ct
 call s:h("TabLineFill",   {"fg": s:norm, "bg": s:bg_very_subtle})
 call s:h("CursorColumn",  {"bg": s:bg_very_subtle})
 call s:h("CursorLine",    {"bg": s:bg_very_subtle})
-call s:h("ColorColumn",   {"bg": s:bg_subtle})
+call s:h("ColorColumn",   {"bg": s:bg_very_subtle})
 
 call s:h("MatchParen",    {"bg": s:bg_subtle, "fg": s:norm})
 call s:h("qfLineNr",      {"fg": s:medium_gray})
